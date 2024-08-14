@@ -349,7 +349,7 @@ function LandingPage() {
               </div>
             )}
             {isEditReplyMode && (
-              <div className="replyForm-container fixed bottom-0 right-0 w-[75%] bg-black p-5 border-t-[1px] border-gray-500 flex flex-col">
+              <div className="replyForm-container fixed bottom-0 right-0 w-[100%] md:w-[50%] lg:w-[60%] xl:w-[75%]  bg-black p-5 border-t-[1px] border-gray-500 flex flex-col">
                 <button 
                   onClick={() => setIsEditReplyMode(false)}
                   className="text-white bg-transparent border-none text-2xl self-end mb-3"
