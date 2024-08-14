@@ -3,7 +3,7 @@ import { AiOutlineDelete } from "react-icons/ai";
 function ReplyCard({ index, commentorName, commentInfo, onEdit, onDelete }) {
   return (
     <div className="replyCard flex items-center">
-      <div className='w-[100%]  rounded-lg text-white p-5 mr-10 bg-white bg-opacity-20 backdrop-blur-md border border-white border-opacity-30 shadow-lg'>
+      <div className='w-[100%]  rounded-lg text-white p-5  bg-white bg-opacity-20 backdrop-blur-md border border-white border-opacity-30 shadow-lg'>
         <div className="replierName text-lg font-semibold mb-2">{commentorName}</div>
         <div className="replyInfo text-sm  text-ellipsis">
           {commentInfo}

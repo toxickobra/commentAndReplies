@@ -253,7 +253,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div className={`main-col ${isSidebarVisible ? 'hidden md:flex md:w-[50%] lg:w-[60%] xl:w-[75%]' : 'md:w-[100%]'}`}>
+        <div className={`main-col ${isSidebarVisible ? 'hidden md:flex md:w-[50%] lg:w-[60%] xl:w-[75%]' : 'w-[100%]'}`}>
           {isFormVisible && (
             <div className="form-container p-10 w-full">
               {isEditMode ? (
@@ -299,7 +299,7 @@ function LandingPage() {
                     <FaArrowDown className={`text-xl ${replySortOrder === 'desc' ? 'text-black' : 'text-gray-500'}`} />
                   </button>
                 </div>
-                <div className="scrollable-element replySection absolute right-0 w-full h-[60vh] overflow-y-auto p-10">
+                <div className="scrollable-element replySection absolute right-0 w-full h-[60vh] overflow-y-auto p-10 ">
                   <div className="flex flex-col gap-5">
                     {selectedComment.replies.map((reply) => (
                       <ReplyCard
