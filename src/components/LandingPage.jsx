@@ -237,7 +237,7 @@ function LandingPage() {
               <FaArrowDown className={`text-xl ${commentSortOrder === 'desc' ? 'text-black' : 'text-gray-500'}`} />
             </button>
           </div>
-          <div className='scrollable-element flex-1 overflow-y-auto mb-10'>
+          <div className='scrollable-element flex-1 overflow-y-auto mb-10 '>
             <div className="sidebarCommentCard flex flex-col gap-5 mb-10">
               {sortedComments.map((comment) => (
                 <CommentCard

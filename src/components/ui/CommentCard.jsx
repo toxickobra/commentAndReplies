@@ -5,11 +5,13 @@ import { AiOutlineDelete } from "react-icons/ai";
 function CommentCard({ index, commentorName, commentInfo, onClick, onDelete, onEdit }) {
   return (
     <div 
-      className="CommentCard flex items-center cursor-pointer relative justify-center" 
-      onClick={onClick} // Attach the onClick handler
+      className="CommentCard  flex items-center  relative justify-center " 
+       // Attach the onClick handler
     >
       
-      <div className='min-w-[80%] max-w-[80%] rounded-lg text-white p-5  bg-white bg-opacity-20 backdrop-blur-md border border-white border-opacity-30 shadow-lg'>
+      <div 
+      onClick={onClick}
+      className='min-w-[80%] max-w-[80%] cursor-pointer rounded-lg text-white p-5  bg-white bg-opacity-20 backdrop-blur-md border border-white border-opacity-30 shadow-lg'>
         <div className="commentorName text-lg font-semibold mb-2 flex">
         <div className="index ">{index}</div>
             {commentorName}
